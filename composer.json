@@ -1,0 +1,13 @@
+{
+   "require":{
+      "yiisoft/yii2":"2.0.9",
+      "yiiext/migrate-command":"0.8.0",
+      "starship/restfullyii": "dev-master"
+   },
+   "config":{
+      "vendor-dir":"app/protected/vendor/"
+   },
+   "require-dev": {
+      "yiisoft/yii2-gii": "^2.0"
+   }
+}

@@ -1,0 +1,39 @@
+2016/09/12 16:13:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 16:18:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 16:20:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 16:34:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.issue_label' (errno: 150). The SQL statement executed was: CREATE TABLE `issue_label` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`project_id` int(10) unsigned NOT NULL,
+	`name` varchar(64) NULL,
+	CONSTRAINT `Projects` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+) ENGINE=InnoDB.
+2016/09/12 16:41:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'project' already exists. The SQL statement executed was: CREATE TABLE `project` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(64) NULL
+) ENGINE=InnoDB.
+2016/09/12 16:42:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.issue_label' (errno: 150). The SQL statement executed was: CREATE TABLE `issue_label` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`project_id` int(10) unsigned NOT NULL,
+	`name` varchar(64) NOT NULL,
+	CONSTRAINT `Project` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+) ENGINE=InnoDB.
+2016/09/12 17:10:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:10:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.issue_label' (errno: 150). The SQL statement executed was: CREATE TABLE `issue_label` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`project_id` int(10) unsigned NOT NULL,
+	`name` varchar(64) NOT NULL,
+	CONSTRAINT `Project` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+) ENGINE=InnoDB.
+2016/09/12 17:13:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:14:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.#sql-4f4_92' (errno: 150). The SQL statement executed was: ALTER TABLE `issue_label` ADD CONSTRAINT `Projects` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE  NO ACTION.
+2016/09/12 17:17:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:17:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.#sql-4f4_94' (errno: 150). The SQL statement executed was: ALTER TABLE `issue_label` ADD CONSTRAINT `Projects` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE  NO ACTION.
+2016/09/12 17:24:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:24:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.#sql-4f4_96' (errno: 150). The SQL statement executed was: ALTER TABLE `issue_label` ADD CONSTRAINT `Projects` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE  NO ACTION.
+2016/09/12 17:28:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:28:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.#sql-4f4_98' (errno: 150). The SQL statement executed was: ALTER TABLE `issue` ADD CONSTRAINT `Projects` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE  NO ACTION.
+2016/09/12 17:31:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:31:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'github_projects.#sql-4f4_9a' (errno: 121). The SQL statement executed was: ALTER TABLE `issue` ADD CONSTRAINT `Projects` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE CASCADE ON UPDATE  NO ACTION.
+2016/09/12 17:37:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/09/12 17:37:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'issue_id' doesn't exist in table. The SQL statement executed was: CREATE INDEX `issue` ON `issue` (`issue_id`).
+2016/09/12 17:40:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'github_projects.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
