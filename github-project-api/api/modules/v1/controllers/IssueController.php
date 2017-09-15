@@ -118,6 +118,11 @@ class IssueController extends ActiveController
             return false;
         }
 
+        return $this->findAndCreate( $params );
+    }
+
+    protected function findAndCreate( $params )
+    {
         $issue = new Issue();
 
         // Check project exist and get it
